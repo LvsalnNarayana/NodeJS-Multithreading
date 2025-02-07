@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-multithreading",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-js": "node index.js value=100 type=js",
+    "start-python": "node index.js value=100 type=python",
+    "exec-command": "node ./execCommand.js",
+    "fork-command": "node ./forkCommand.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
