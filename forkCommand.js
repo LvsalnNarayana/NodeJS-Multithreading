@@ -16,7 +16,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const childScriptPath = path.resolve(__dirname, "scripts", "child-script.js");
 
 // Fork a new Node.js process and run the child script
-const child = fork(childScriptPath);
+// const child = fork(childScriptPath);
+const child =fork("invalid-script.js", { silent: true });
 
 console.log(`Forked process running: ${childScriptPath}`);
 

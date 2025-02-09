@@ -4,14 +4,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start-js": "node index.js value=100 type=js",
     "start-python": "node index.js value=100 type=python",
     "exec-command": "node ./execCommand.js",
-    "fork-command": "node ./forkCommand.js"
+    "fork-command": "node ./forkCommand.js",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest tests"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
